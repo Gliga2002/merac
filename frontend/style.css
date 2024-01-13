@@ -1,0 +1,111 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*10px*/
+}
+
+.section {
+  max-width: 90rem;
+  margin: 2rem auto;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 3px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-data input {
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+.item-data h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.item-data p.min-max-prosek {
+  font-size: 1.22rem;
+}
+
+.item-data p.min-max-prosek span {
+  color: red;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: rgb(237, 205, 162);
+  border-radius: 3px;
+  border: none;
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(246, 213, 171);
+}
+
+.termometar {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.podeoci {
+  width: 40px;
+  text-align: right;
+}
+
+.podeok {
+  border-top: 1px solid black;
+}
+
+.stub {
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.stub div {
+  transition: all 0.6s;
+}
